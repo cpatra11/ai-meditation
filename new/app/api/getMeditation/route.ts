@@ -17,7 +17,7 @@ export async function POST(request) {
   }
   const email = "bhalu@cpun.com";
   const password = "123456";
-  const loginResponse = await fetch(`http://localhost:4000/auth/login`, {
+  const loginResponse = await fetch(`${process.env.API_URL}/auth/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -45,7 +45,7 @@ export async function POST(request) {
   }
 
   // const expressApiUrl = `http://localhost:4000/api/audioo?userId=${userId}&preferenceId=${preferenceId}`;
-  const expressApiUrl = `http://localhost:4000/api/audioo?userId=${userId}`;
+  const expressApiUrl = `${process.env.API_URL}/api/audioo?userId=${userId}`;
   console.log("Express API URL:", expressApiUrl);
 
   try {

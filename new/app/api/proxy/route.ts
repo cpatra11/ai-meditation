@@ -24,7 +24,7 @@ export async function POST(req: NextApiRequest, res: NextApiResponse) {
     audioData.meditationScript = sanitizedMeditationScript;
 
     // Step 2: Authenticate by making a POST request to login
-    const loginResponse = await fetch(`http://localhost:4000/auth/login`, {
+    const loginResponse = await fetch(`${process.env.API_URL}/auth/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -53,7 +53,7 @@ export async function POST(req: NextApiRequest, res: NextApiResponse) {
     }
 
     // Step 3: Use the token to generate audio by making a POST request to the /api/audio endpoint
-    const audioResponse = await fetch(`http://localhost:4000/api/audio`, {
+    const audioResponse = await fetch(`${process.env.API_URL}/api/audio`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
