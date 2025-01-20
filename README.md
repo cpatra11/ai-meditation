@@ -1,4 +1,4 @@
-
+Realising the limitation of nextjs, I delegated the audio-creating services to the express server.  I used huggingface models inference api for meditation script generation and rapidapi tts model for Voiceovers. I used ffmpeg to combine voiceovers.
 
 ### **Step-by-Step Guide to Install FFmpeg and FFprobe using npm**
 
