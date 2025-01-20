@@ -1,6 +1,4 @@
-Certainly! Here's a concise guide to help the user install **FFmpeg** and **FFprobe** using npm, and how to update the **ffprobe** path in your `tts.js` file. I’ll also include a basic README template for your GitHub repository.
 
----
 
 ### **Step-by-Step Guide to Install FFmpeg and FFprobe using npm**
 
@@ -148,4 +146,3 @@ API_URL= // this is the full url of the backend e.g. http:localhost:4000
 MONGODB_URI=
 ```
 
-This guide and README should help users set up FFmpeg and FFprobe with npm in your project, as well as provide a clear overview of how to get started with the repo. Let me know if you need any further changes!
