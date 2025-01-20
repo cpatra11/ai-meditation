@@ -68,7 +68,7 @@ To set up the project locally, follow these steps:
 
    ```bash
    git clone https://github.com/cpatra11/ai-meditation.git
-   cd audio-service
+   cd /server/audio-service
    ```
 
 2. Install the dependencies:
@@ -89,9 +89,9 @@ To set up the project locally, follow these steps:
    npm install fluent-ffmpeg ffmpeg-static
    ```
 
-4. Configure the path to **FFprobe** in **`/audio-service/tts.js`**:
+4. Configure the path to **FFprobe** in **`/audio-service/joining.js`**:
 
-   Make sure the `ffprobe` path is correctly set in `tts.js`:
+   Make sure the `ffprobe` path is correctly set in `joining.js`:
 
    ```javascript
    const ffmpeg = require('fluent-ffmpeg');
